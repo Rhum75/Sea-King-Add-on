@@ -1,0 +1,31 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"myname:sea_king": {
+				"events": {
+					"death": "dig.wood",
+					"hurt": "mob.villager.hit"
+				},
+				"pitch": [
+					0.30,
+					0.10	
+				],
+				"volume": 1
+			}
+		}
+	},
+	"interactive_sounds": {
+		"entities": {
+			"myname:sea_king_baby":{
+				"events":{
+					"death": "dig_wood",
+					"hurt":"mob.villager.hit"
+				},
+				"pitch":[
+					0.10,0.15
+				],
+				"volume": 1
+			}
+		}
+	}
+}

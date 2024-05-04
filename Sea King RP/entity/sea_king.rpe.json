@@ -1,0 +1,41 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "myname:sea_king",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"animations": {
+				"a.look": "animation.sea_king.look",
+				"a.idle": "animation.sea_king.idle",
+				"a.swim": "animation.sea_king.swim",
+				"a.walk": "animation.sea_king.walk",
+				"a.attack": "animation.sea_king.attack",
+				"a.idle_s": "animation.sea_king.idle_s",
+				"ac.default": "controller.animation.sea_king.default",
+				"ac.attack": "controller.animation.sea_king.attack"
+			},
+			"scripts": {
+				"animate": [
+					"a.look",
+					"ac.default",
+					"ac.attack"
+				]
+			},
+			"textures": {
+				"default": "textures/entity/sea_king"
+			},
+			"geometry": {
+				"default": "geometry.sea_king"
+			},
+			"spawn_egg": {
+				"base_color": "#1d1d70",
+				"overlay_color": "#070852"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

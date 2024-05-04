@@ -1,0 +1,64 @@
+{
+	"format_version": "1.16.100",
+	"animation_controllers": {
+		"controller.animation.sea_king.default": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": [
+						{
+							"a.idle": "!q.is_in_water"
+						},
+						{
+							"a.idle_s": "q.is_in_water"
+						}
+					],
+					"blend_transition": 0.5,
+					"transitions": [
+						{
+							"move": "q.is_moving"
+						}
+					]
+				},
+				"move": {
+					"animations": [
+						{
+							"a.walk": "!q.is_in_water"
+						},
+						{
+							"a.swim": "q.is_in_water"
+						}
+					],
+					"transitions": [
+						{
+							"idle": "!q.is_moving"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.sea_king.attack": {
+			"initial_state": "no_atttack",
+			"states": {
+				"no_atttack": {
+					"transitions": [
+						{
+							"attack": "q.is_delayed_attacking"
+
+						}
+					]
+				},
+				"attack": {
+					"animations": [
+						"a.attack"
+					],
+					"transitions": [
+						{
+							"no_atttack": "!q.is_delayed_attacking"
+						}
+					]
+				}
+			}
+		}
+	}
+}

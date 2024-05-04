@@ -1,0 +1,24 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Sea King",
+		"description": "Sea King Resource Pack",
+		"uuid": "13f75a38-92ff-aa60-7358-fcafe9786ae1",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"authors": ["Rum"],
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.3.1"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Sea King",
+			"type": "resources",
+			"uuid": "843de89b-5637-10e6-f8be-c891446c5083",
+			"version": [1, 0, 0]
+		}
+	]
+}

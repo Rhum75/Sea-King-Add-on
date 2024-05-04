@@ -1,0 +1,3 @@
+entity.myname:sea_king.name=Sea King
+item.spawn_egg.entity.myname:sea_king.name=Spawn Sea King
+action.hint.exit.myname:sea_king=Ride  
